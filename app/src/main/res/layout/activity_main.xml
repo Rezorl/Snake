@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8fc925"
+    tools:context="com.example.dawid.snake.MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8"
+        android:orientation="vertical"
+        tools:context="com.example.dawid.snake.GameActivity"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_weight="2"
+            android:src="@drawable/snake"
+            android:orientation="vertical"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="6"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        tools:context="com.example.dawid.snake.GameActivity"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+    <Button
+        android:id="@+id/buttonStartGame"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:text="Start"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:onClick="buttonStartNewGameClick"
+        android:background="#558201"
+        android:textColor="#edeece"
+        android:layout_margin="8dp"
+        android:layout_gravity="center"
+        />
+        <Button
+            android:id="@+id/buttonScore"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:text="Tabela wyników"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:onClick="buttonOpenHighScore"
+            android:background="#558201"
+            android:textColor="#edeece"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/buttonSetLevel"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:text="Wybierz poziom"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:onClick="buttonSetLevel"
+            android:background="#558201"
+            android:textColor="#edeece"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

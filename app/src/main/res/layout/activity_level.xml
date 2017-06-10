@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sum_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dawid.snake.SumaryActivity"
+    android:background="#8fc925">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/linear">
+        <TextView
+            android:hint="Wybierz poziom trudności:"
+            android:id="@+id/sumUp_textView_firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textSize="20sp"
+            android:layout_weight="2"
+            android:textColor="#edeece"
+            android:textColorHighlight="#edeece"
+            android:textColorHint="#edeece"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup">
+        <RadioButton
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="Łatwy"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/radioButtonLatwy"
+            android:maxLength="35"
+            android:textSize="13dp"
+            android:textColor="#edeece"
+            android:textAllCaps="false"
+            android:textColorHighlight="#edeece"
+            android:textColorHint="#edeece"
+            android:buttonTint="#edeece"/>
+        <RadioButton
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="Średni"
+            android:buttonTint="#edeece"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/radioButtonSredni"
+            android:maxLength="35"
+            android:textSize="13dp"
+            android:textColor="#edeece"
+            android:textAllCaps="false"
+            android:textColorHighlight="#edeece"
+            android:textColorHint="#edeece" />
+        <RadioButton
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:buttonTint="#edeece"
+            android:hint="Trudny"
+            android:id="@+id/radioButtonTrudny"
+            android:maxLength="35"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="20dp"
+            android:textSize="13dp"
+            android:textColor="#edeece"
+            android:textAllCaps="false"
+            android:textColorHighlight="#edeece"
+            android:textColorHint="#edeece" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sum_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dawid.snake.SumaryActivity"
+    android:background="#8fc925">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_alignParentTop="true"
+        android:id="@+id/linear">
+    <TextView
+        android:hint="Podaj nick:"
+        android:id="@+id/sumUp_textView_firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:layout_weight="2"
+        android:textColor="#edeece"
+        android:textColorHighlight="#edeece"
+        android:textColorHint="#edeece"
+        android:textColorLink="#edeece"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:hint="Wprowadź nick..."
+        android:id="@+id/editTextNick"
+        android:inputType="textPersonName"
+        android:maxLength="35"
+        android:textSize="13dp"
+        android:textColor="#edeece"
+        android:textAllCaps="false"
+        android:textColorHighlight="#edeece"
+        android:textColorHint="#edeece" />
+        <TextView
+            android:id="@+id/textViewSum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:textSize="20sp"
+            android:layout_weight="3"
+            android:textColor="#edeece"
+            android:textColorHighlight="#edeece"
+            android:textColorHint="#edeece"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:onClick="buttonAddScoreClick"
+            android:scaleType="fitCenter"
+            android:text="Dodaj wynik"
+            android:background="#558201"
+            android:layout_margin="8dp"
+            android:textColor="#edeece" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:onClick="buttonExitClick"
+            android:scaleType="fitCenter"
+            android:text="Wyjdź"
+            android:background="#558201"
+            android:layout_margin="8dp"
+            android:textColor="#edeece" />
+    </LinearLayout>
+
+</RelativeLayout>
